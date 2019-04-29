@@ -1,0 +1,102 @@
+.wrap {
+  border: 1px solid red;
+  padding: 0;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: 200px 200px;
+      grid-template-columns: 200px 200px;
+  -ms-grid-rows: 200px;
+      grid-template-rows: 200px;
+  grid-auto-columns: 200px;
+  grid-auto-rows: 200px;
+}
+
+.wrap div {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.wrap .div-3 {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+/*@media (min-width: 320px) and (max-width: 495px) {
+    .wrap {
+        width: 100%;
+        display: grid;  
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 100px 100px ;
+        grid-template-areas: "a a b b c c"
+                            "d d e e f f"
+                            "g h i j k l"
+                            "m m m m m m "
+                            "n n n n n n ";
+       
+        div{
+            border: 1px solid black;
+            text-align: center;
+            &:nth-child(2n+1){
+                background-color: aquamarine;
+                border-radius: 10px;
+            }
+            &:nth-child(2n){
+                background-color: rgb(207, 240, 116);
+            }
+        }
+        .div-1 {
+            grid-area: a; 
+        }
+        .div-2 {
+            grid-area: b;
+        }
+        .div-3 {
+            grid-area: c;
+        }
+        .div-4 {
+            grid-area: d;
+        }
+        .div-5 {
+            grid-area: e; 
+        }
+        .div-6{
+            grid-area: f;
+        }
+        .div-7{
+            grid-area: g;
+        }
+        .div-8{
+            grid-area: h;
+        }
+        .div-9{
+            grid-area: i;
+        }
+        .div-10{
+            grid-area: j;
+        }
+        .div-11{
+            grid-area: k;
+        }
+        .div-12{
+            grid-area: l;
+        }
+        .div-13{
+            grid-area: m;
+            &:hover{
+                background-color: rgb(255, 0, 76);
+            }
+        }
+        .div-14{
+            grid-area: n;
+            &:hover{
+                background-color: blue;
+            }
+        }
+    } 
+}*/
+/*# sourceMappingURL=style.css.map */
